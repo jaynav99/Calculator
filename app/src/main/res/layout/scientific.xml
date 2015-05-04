@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:minWidth="50dp"
+        android:id="@+id/linearlayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:background="#D3D3D3"
+            android:text="0"
+            android:gravity="center|right"
+            android:maxLength="10"
+            android:editable="false"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_column="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBasic"
+        android:layout_below="@+id/linearlayout"
+        android:text="Basic"></Button>
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:layout_below="@+id/btnBasic"
+        android:orientation="horizontal"
+        android:id="@+id/gridLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_column="3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnClearText"
+            android:text="Clear"></Button>
+
+        <Button android:text="sin"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/sin"/>
+
+        <Button android:text="cos"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/cos"/>
+
+        <Button android:text="tan"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/tan"/>
+
+        <Button android:text="i"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/complex"/>
+
+        <Button android:text="ln"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/logBase2"/>
+
+        <Button android:text="log"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/logBase10"/>
+
+        <Button android:text="Pie"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/pie"/>
+
+        <Button android:text="e"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/exponential"/>
+
+        <Button android:text="%"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/percentage"/>
+
+        <Button android:text="!"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/factorial"/>
+
+        <Button android:text="sqrt"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/squareRoot"/>
+
+        <Button android:text="^"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/power"/>
+
+        <Button android:text="("
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/openBrackets"/>
+
+        <Button android:text=")"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/closeBrackets"/>
+
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
